@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libflann_cuda_s.a  CMakeFiles/flann_cuda_s.dir/flann/algorithms/flann_cuda_s_generated_kdtree_cuda_3d_index.cu.o
+/usr/bin/ranlib ../../lib/libflann_cuda_s.a
