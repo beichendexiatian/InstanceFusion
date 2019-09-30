@@ -26,10 +26,11 @@ The system has been developed for Linux. It has been tested on Ubuntu 16.04, wit
     
 Make sure you can have all the dependencies and can compile and run the two major software packages this framework uses: elasticfusion and Mask-RCNN. They have both been slightly modified for this repo, so to be sure they are working build both of the projects that are cloned within the this repo. The changes however are minor, so the compilation and dependency instructions provided for those projects still apply.
 Other than this, you have to build and install flann:  
-`cd /deps/flann-1.8.4/build  
+
+cd /deps/flann-1.8.4/build  
 cmake ..  
 make -j8  
-sudo make install`  
+sudo make install   
 
 Python virtual environment:
     sudo -H pip3 install virtualenv
