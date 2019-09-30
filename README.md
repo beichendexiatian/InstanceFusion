@@ -55,11 +55,11 @@ If both of the dependencies are working, make a build directory and compile - th
   `mkdir build`  
   `cd build`  
   `cmake ..`  
-  `make -j8` 
+  `make -j8`   
 Finally, you need to modify the path information of the Mask-RCNN network, open~ /Instancefusion/build/ mask_ori.py and Change MASK_RCNN_DIR to the path of your Mask-RCNN.  
-2.	Download Models
-The Mask-RCNN models are available here(https://github.com/matterport/Mask_RCNN/releases) with the mask_rcnn_coco.h5. Download and copy them to the Mask-RCNN subfolder of this project Instancefusion/deps/mask_rcnn.
-3.	How to run it?
+## 2.Download Models
+The Mask-RCNN models are available [here](https://github.com/matterport/Mask_RCNN/releases) with the mask_rcnn_coco.h5. Download and copy them to the Mask-RCNN subfolder of this project Instancefusion/deps/mask_rcnn.
+## 3.How to run it?
 If you have a kinect camera and OpenNI2 working (i.e. you can run ElasticFusion live) then you can run InstanceFusion classes by simply running the program with no arguments in the build directory. You need to make sure OpenNI2 can detect and access the feed from the camera.
 ./InstanceFusion
 You can test InstanceFusion on some dataset, such as scanNet(scanNet is available here https://github.com/ScanNet/ScanNet) and dyson_lab.klg(available here https://www.doc.ic.ac.uk/~sleutene/datasets/elasticfusion/dyson_lab.klg). To run on scanNet provide two arguments to the InstanceFusion program to save the prediction pngs to the working directory (NOTE the second argument does not indicate where predictions are saved, it is a textfile denoting which predictions should be saved):
