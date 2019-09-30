@@ -35,19 +35,19 @@ Other than this, you have to build and install flann:
 Python virtual environment:  
   
     sudo -H pip3 install virtualenv  
-    `highlight "Setting up virtual python environment..."`  
-    `virtualenv python-environment`  
-    `source ~/python-environment/bin/activate`  
-    `pip3 install pip --upgrade`  
-    `pip3 install tensorflow-gpu==1.4.0`  
-    `pip3 install scikit-image`  
-    `pip3 install keras`  
-    `pip3 install IPython`  
-    `pip3 install h5py` 
-    `pip3 install cython`
-    `pip3 install imgaug`  
-    `pip3 install opencv-python`  
-    `pip3 install pytoml`  
+    highlight "Setting up virtual python environment..."  
+    virtualenv python-environment  
+    source ~/python-environment/bin/activate  
+    pip3 install pip --upgrade  
+    pip3 install tensorflow-gpu==1.4.0  
+    pip3 install scikit-image  
+    pip3 install keras  
+    pip3 install IPython  
+    pip3 install h5py 
+    pip3 install cython
+    pip3 install imgaug  
+    pip3 install opencv-python  
+    pip3 install pytoml  
       
 You can use this sentence " source ~/python-environment/bin/activate " to activate the python virtual environment.
 
