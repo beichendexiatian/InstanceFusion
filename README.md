@@ -50,13 +50,13 @@ Python virtual environment:
 
 You can use this sentence " source ~/python-environment/bin/activate " to activate the python virtual environment.
 
-If both of the dependencies are working, make a build directory and compile - this should build both sub-projects and then InstanceFusion.
-cd InstanceFusion
-mkdir build
-cd build
-cmake ..
-make -j8
-Finally, you need to modify the path information of the Mask-RCNN network, open~ /Instancefusion/build/ mask_ori.py and Change MASK_RCNN_DIR to the path of your Mask-RCNN.
+If both of the dependencies are working, make a build directory and compile - this should build both sub-projects and then InstanceFusion.  
+  `cd InstanceFusion`  
+  `mkdir build`  
+  `cd build`  
+  `cmake ..`  
+  `make -j8` 
+Finally, you need to modify the path information of the Mask-RCNN network, open~ /Instancefusion/build/ mask_ori.py and Change MASK_RCNN_DIR to the path of your Mask-RCNN.  
 2.	Download Models
 The Mask-RCNN models are available here(https://github.com/matterport/Mask_RCNN/releases) with the mask_rcnn_coco.h5. Download and copy them to the Mask-RCNN subfolder of this project Instancefusion/deps/mask_rcnn.
 3.	How to run it?
