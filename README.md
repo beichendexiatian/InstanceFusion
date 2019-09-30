@@ -26,13 +26,14 @@ The system has been developed for Linux. It has been tested on Ubuntu 16.04, wit
     
 Make sure you can have all the dependencies and can compile and run the two major software packages this framework uses: elasticfusion and Mask-RCNN. They have both been slightly modified for this repo, so to be sure they are working build both of the projects that are cloned within the this repo. The changes however are minor, so the compilation and dependency instructions provided for those projects still apply.
 Other than this, you have to build and install flann:  
-
+  
  `cd /deps/flann-1.8.4/build`  
  `cmake ..`  
  `make -j8`  
  `sudo make install`   
-
+  
 Python virtual environment:  
+  
     `sudo -H pip3 install virtualenv`  
     `highlight "Setting up virtual python environment..."`  
     `virtualenv python-environment`  
@@ -47,22 +48,26 @@ Python virtual environment:
     `pip3 install imgaug`  
     `pip3 install opencv-python`  
     `pip3 install pytoml`  
-
+      
 You can use this sentence " source ~/python-environment/bin/activate " to activate the python virtual environment.
 
 If both of the dependencies are working, make a build directory and compile - this should build both sub-projects and then InstanceFusion.  
+  
   `cd InstanceFusion`  
   `mkdir build`  
   `cd build`  
   `cmake ..`  
   `make -j8`   
+    
 Finally, you need to modify the path information of the Mask-RCNN network, open~ /Instancefusion/build/ mask_ori.py and Change MASK_RCNN_DIR to the path of your Mask-RCNN.  
 ## 2.Download Models
 The Mask-RCNN models are available [here](https://github.com/matterport/Mask_RCNN/releases) with the mask_rcnn_coco.h5. Download and copy them to the Mask-RCNN subfolder of this project Instancefusion/deps/mask_rcnn.
-## 3.How to run it?
-If you have a kinect camera and OpenNI2 working (i.e. you can run ElasticFusion live) then you can run InstanceFusion classes by simply running the program with no arguments in the build directory. You need to make sure OpenNI2 can detect and access the feed from the camera.
+## 3.How to run it?  
+If you have a kinect camera and OpenNI2 working (i.e. you can run ElasticFusion live) then you can run InstanceFusion classes by simply running the program with no arguments in the build directory. You need to make sure OpenNI2 can detect and access the feed from the camera.  
+  
 ./InstanceFusion
-You can test InstanceFusion on some dataset, such as scanNet(scanNet is available here https://github.com/ScanNet/ScanNet) and dyson_lab.klg(available here https://www.doc.ic.ac.uk/~sleutene/datasets/elasticfusion/dyson_lab.klg). To run on scanNet provide two arguments to the InstanceFusion program to save the prediction pngs to the working directory (NOTE the second argument does not indicate where predictions are saved, it is a textfile denoting which predictions should be saved):
+  
+You can test InstanceFusion on some dataset, such as scanNet(scanNet is available [here](https://github.com/ScanNet/ScanNet)) and dyson_lab.klg(available [here](https://www.doc.ic.ac.uk/~sleutene/datasets/elasticfusion/dyson_lab.klg)). To run on scanNet provide two arguments to the InstanceFusion program to save the prediction pngs to the working directory (NOTE the second argument does not indicate where predictions are saved, it is a textfile denoting which predictions should be saved):
 ./InstanceFusion /path/to/your/scanNet/RAW/scene0524_00/data.txt /path/to/your/scanNet/RAW/scene0524_00/output.txt
 And run dyson_lab.klg like this:
 ./InstanceFusion -l /path/to/your/dyson_lab.klg
