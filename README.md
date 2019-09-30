@@ -22,7 +22,7 @@ Please cite this work if you make use of our system in any of your own endeavors
   
 The system has been developed for Linux. It has been tested on Ubuntu 16.04, with gcc-5.4, CUDA 8.0, NVIDIA Driver 410.78, and CMake 3.5.1, with an Intel Core i7-4790 CPU @ 3.60GHz and Nvidia Geforce GTX 1080. Clone recursively with:  
 
-    git clone --recursive https:// https://github.com/Fancomi2017/InstanceFusion.git  
+    git clone --recursive https://github.com/Fancomi2017/InstanceFusion.git  
     
 Make sure you can have all the dependencies and can compile and run the two major software packages this framework uses: elasticfusion and Mask-RCNN. They have both been slightly modified for this repo, so to be sure they are working build both of the projects that are cloned within the this repo. The changes however are minor, so the compilation and dependency instructions provided for those projects still apply.
 Other than this, you have to build and install flann:  
@@ -76,4 +76,4 @@ And run dyson_lab.klg like this:
   `./InstanceFusion -l /path/to/your/dyson_lab.klg`
 
 ## 4.License
-InstanceFusion is freely available for non-commercial use only. Full terms and conditions which govern its use are detailed here and in the LICENSE.txt file.
+InstanceFusion is freely available for non-commercial use only. Full terms and conditions which govern its use are in the LICENSE.txt file.
