@@ -65,12 +65,15 @@ The Mask-RCNN models are available [here](https://github.com/matterport/Mask_RCN
 ## 3.How to run it?  
 If you have a kinect camera and OpenNI2 working (i.e. you can run ElasticFusion live) then you can run InstanceFusion classes by simply running the program with no arguments in the build directory. You need to make sure OpenNI2 can detect and access the feed from the camera.  
   
-./InstanceFusion
+  `./InstanceFusion`  
   
-You can test InstanceFusion on some dataset, such as scanNet(scanNet is available [here](https://github.com/ScanNet/ScanNet)) and dyson_lab.klg(available [here](https://www.doc.ic.ac.uk/~sleutene/datasets/elasticfusion/dyson_lab.klg)). To run on scanNet provide two arguments to the InstanceFusion program to save the prediction pngs to the working directory (NOTE the second argument does not indicate where predictions are saved, it is a textfile denoting which predictions should be saved):
-./InstanceFusion /path/to/your/scanNet/RAW/scene0524_00/data.txt /path/to/your/scanNet/RAW/scene0524_00/output.txt
+You can test InstanceFusion on some dataset, such as scanNet(scanNet is available [here](https://github.com/ScanNet/ScanNet)) and dyson_lab.klg(available [here](https://www.doc.ic.ac.uk/~sleutene/datasets/elasticfusion/dyson_lab.klg)). To run on scanNet provide two arguments to the InstanceFusion program to save the prediction pngs to the working directory (NOTE the second argument does not indicate where predictions are saved, it is a textfile denoting which predictions should be saved):  
+  
+  `./InstanceFusion /path/to/your/scanNet/RAW/scene0524_00/data.txt /path/to/your/scanNet/RAW/scene0524_00/output.txt`  
+  
 And run dyson_lab.klg like this:
-./InstanceFusion -l /path/to/your/dyson_lab.klg
+  
+  `./InstanceFusion -l /path/to/your/dyson_lab.klg`
 
-4.	License
+## 4.License
 InstanceFusion is freely available for non-commercial use only. Full terms and conditions which govern its use are detailed here and in the LICENSE.txt file.
