@@ -34,7 +34,7 @@ Other than this, you have to build and install flann:
   
 Python virtual environment:  
   
-    `sudo -H pip3 install virtualenv`  
+    sudo -H pip3 install virtualenv  
     `highlight "Setting up virtual python environment..."`  
     `virtualenv python-environment`  
     `source ~/python-environment/bin/activate`  
